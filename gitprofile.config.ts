@@ -5,7 +5,7 @@ const CONFIG = {
     username: 'oricha',
   },
 
-  base: '/oricha/',
+  base: '/',
 
   publications: [],
 
@@ -91,7 +91,7 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'oricha',
+    medium: '',
     dev: 'oricha',
     stackoverflow: '',
     discord: '',
