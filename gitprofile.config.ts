@@ -2,228 +2,231 @@
 
 const CONFIG = {
   github: {
-    username: 'oricha', // Your GitHub org/user name. (This is the only required config)
+    username: 'oricha',
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/oricha/oricha.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/oricha/portfolio, then set base to '/portfolio/'.
-   */
-  base: '/gitprofile/',
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
+
+  base: '/oricha/',
+
+  publications: [],
+
   projects: {
     github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      display: true,
+      header: 'GitHub Projects',
+      mode: 'automatic',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 6, // How many projects to display.
+        sortBy: 'updated',
+        limit: 6,
         exclude: {
-          forks: true, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['oricha/my-project1', 'oricha/my-project2']
+          forks: true,
+          projects: [],
         },
       },
       manual: {
-        // Properties for manually specifying projects
-        projects: ['oricha/gitportfolio'], // List of repository names to display. example: ['oricha/my-project1', 'oricha/my-project2']
+        projects: [
+          'oricha/recicar',
+          'oricha/cardealer',
+          'oricha/citamedica',
+          'oricha/gitportfolio',
+        ],
       },
     },
+
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'Featured Projects',
       projects: [
         {
-          title: 'Project Name',
+          title: 'Recicar',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Marketplace platform for selling car parts from scrapyards. Built with Spring Boot and PostgreSQL. Commission-based multi-seller architecture.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://img.freepik.com/free-vector/car-parts-concept-illustration_114360-8036.jpg',
+          link: 'https://github.com/oricha/recicar',
         },
         {
-          title: 'Project Name',
+          title: 'CitaMedica',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'SaaS medical appointment booking platform focused on scheduling, scalability, and clean architecture using TypeScript.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://img.freepik.com/free-vector/online-doctor-concept-illustration_114360-1783.jpg',
+          link: 'https://github.com/oricha/citamedica',
+        },
+        {
+          title: 'CarDealer',
+          description:
+            'Car marketplace prototype for listings and dealership flows. Frontend-focused HTML project.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/car-dealer-concept-illustration_114360-8890.jpg',
+          link: 'https://github.com/oricha/cardealer',
+        },
+        {
+          title: 'Nordic Design Studio',
+          description:
+            'Concept platform for Nordic-style modular homes and energy-efficient housing projects.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/modern-house-concept-illustration_114360-1088.jpg',
+          link: 'https://github.com/oricha',
         },
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+
+  seo: {
+    title: 'Karel Muñiz Perdomo | Senior Backend & DevOps Engineer',
+    description:
+      'Senior Software Engineer with 15+ years of experience in Java, Spring Boot, Kubernetes, AWS, and cloud-native architectures. Based in Barcelona, working across Europe.',
+    imageURL: '',
+  },
+
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'oricha@mastodon.social',
+    linkedin: 'oricha',
+    x: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '',
     udemy: '',
     dribbble: '',
     behance: '',
     medium: 'oricha',
     dev: 'oricha',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    stackoverflow: '',
     discord: '',
     telegram: '',
-    website: 'https://www.oricha.com',
+    website: 'https://karelmuniz.com/',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'oricha@gmail.com',
   },
+
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://karelmuniz.com/CV.pdf',
   },
+
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
+    'Java 11–21',
+    'Spring Boot 3',
+    'Scala (Cats, FP)',
+    'Kotlin',
+    'NodeJS',
+    'REST APIs',
+    'Microservices',
+    'Hexagonal Architecture',
+    'Domain Driven Design',
+    'AWS',
+    'Azure',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
+    'Kubernetes (EKS, Fargate)',
+    'Terraform',
+    'Ansible',
+    'GitHub Actions',
+    'GitLab CI',
+    'Helm',
+    'Kafka',
+    'RabbitMQ',
+    'PostgreSQL',
+    'Oracle',
+    'DynamoDB',
+    'Vue.js',
+    'React',
+    'Next.js',
     'Tailwind',
   ],
+
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Nike',
+      position: 'Senior Backend / Staff Engineer',
+      from: '2022',
+      to: '2024',
+      companyLink: 'https://www.nike.com',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'ING Netherlands',
+      position: 'Senior DevOps / Backend Engineer',
+      from: '2020',
+      to: '2022',
+      companyLink: 'https://www.ing.com',
+    },
+    {
+      company: 'Allianz Trade',
+      position: 'Senior Backend Engineer',
+      from: '2018',
+      to: '2020',
+      companyLink: 'https://www.allianz-trade.com',
+    },
+    {
+      company: 'RACC',
+      position: 'Senior Software Engineer',
+      from: '2016',
+      to: '2018',
+      companyLink: 'https://www.racc.es',
     },
   ],
+
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'AWS Cloud Certification',
+      body: 'Cloud infrastructure and DevOps',
+      year: '2023',
+      link: '',
+    },
+    {
+      name: 'Microsoft Azure Administrator',
+      body: 'Azure infrastructure and deployment',
+      year: '2022',
+      link: '',
     },
   ],
+
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Polytechnic University José Antonio Echeverría',
+      degree: "Bachelor's Degree in Computer Software Engineering",
+      from: '2004',
+      to: '2009',
     },
   ],
-  // Display articles from your medium or dev account. (Optional)
+
   blog: {
-    source: 'dev', // medium | dev
-    username: 'oricha', // to hide blog section, keep it empty
-    limit: 4, // How many articles to display. Max is 10.
+    source: 'dev',
+    username: 'oricha',
+    limit: 4,
   },
+
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: '',
   },
-  // Track visitor interaction and behavior. https://www.hotjar.com
+
   hotjar: { id: '', snippetVersion: 6 },
+
   themeConfig: {
-    defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
+    defaultTheme: 'nord',
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
       'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
       'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
       'lofi',
       'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
       'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
+      'nord',
       'winter',
       'dim',
-      'nord',
-      'sunset',
-      'caramellatte',
       'abyss',
-      'silk',
       'procyon',
     ],
   },
 
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Built with <a 
       class="text-primary" href="https://github.com/oricha/gitportfolio"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+    >GitProfile</a> · Karel Muñiz Perdomo`,
 
   enablePWA: true,
 };
