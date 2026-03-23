@@ -197,7 +197,7 @@ const CONFIG = {
   },
 
   googleAnalytics: {
-    id: '',
+    id: 'G-BXBMVEX8LW',
   },
 
   hotjar: { id: '', snippetVersion: 6 },
