@@ -203,22 +203,12 @@ const CONFIG = {
   hotjar: { id: '', snippetVersion: 6 },
 
   themeConfig: {
-    defaultTheme: 'nord',
-    disableSwitch: false,
+    defaultTheme: 'dark',
+    disableSwitch: true,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'light',
       'dark',
-      'corporate',
-      'lofi',
-      'pastel',
-      'business',
-      'nord',
-      'winter',
-      'dim',
-      'abyss',
-      'procyon',
     ],
   },
 
