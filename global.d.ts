@@ -215,6 +215,13 @@ interface Resume {
   fileUrl?: string;
 }
 
+interface ProfileConfig {
+  /**
+   * Custom avatar url (overrides GitHub avatar)
+   */
+  avatarUrl?: string;
+}
+
 interface Experience {
   company?: string;
   position?: string;
@@ -366,6 +373,11 @@ interface Config {
    * Resume
    */
   resume?: Resume;
+
+  /**
+   * Profile configuration
+   */
+  profile?: ProfileConfig;
 
   /**
    * Google Analytics config

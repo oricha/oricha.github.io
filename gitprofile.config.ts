@@ -7,6 +7,11 @@ const CONFIG = {
 
   base: '/',
 
+  profile: {
+    avatarUrl:
+      'https://s3.eu-west-1.amazonaws.com/amzn-s3-https-oricha.github.io-050451388777-eu-west-1-an/yo1.gif',
+  },
+
   publications: [],
 
   projects: {
@@ -27,7 +32,7 @@ const CONFIG = {
           'oricha/recicar',
           'oricha/cardealer',
           'oricha/citamedica',
-          'oricha/gitportfolio',
+          'oricha/Karma',
         ],
       },
     },
@@ -102,7 +107,7 @@ const CONFIG = {
   },
 
   resume: {
-    fileUrl: 'https://karelmuniz.com/CV.pdf',
+    fileUrl: 'https://s3.eu-west-1.amazonaws.com/amzn-s3-https-oricha.github.io-050451388777-eu-west-1-an/Karel_Muniz_+.pdf',
   },
 
   skills: [

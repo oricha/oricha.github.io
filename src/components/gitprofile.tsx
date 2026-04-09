@@ -105,7 +105,7 @@ const GitProfile = ({ config }: { config: Config }) => {
       const data = response.data;
 
       setProfile({
-        avatar: data.avatar_url,
+        avatar: sanitizedConfig.profile.avatarUrl || data.avatar_url,
         name: data.name || ' ',
         bio: data.bio || '',
         location: data.location || '',
