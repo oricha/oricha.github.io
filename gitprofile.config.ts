@@ -8,8 +8,8 @@ const CONFIG = {
   base: '/',
 
   profile: {
-    avatarUrl:
-      'https://s3.eu-west-1.amazonaws.com/amzn-s3-https-oricha.github.io-050451388777-eu-west-1-an/yo1.gif',
+    // avatarUrl será obtenido automáticamente de GitHub
+    // avatarUrl: 'https://s3.eu-west-1.amazonaws.com/amzn-s3-https-oricha.github.io-050451388777-eu-west-1-an/yo1.gif',
   },
 
   publications: [],
@@ -97,7 +97,7 @@ const CONFIG = {
     dribbble: '',
     behance: '',
     medium: '',
-    dev: 'oricha',
+    dev: '',
     stackoverflow: '',
     discord: '',
     telegram: '',
